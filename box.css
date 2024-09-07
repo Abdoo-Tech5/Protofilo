@@ -1,0 +1,81 @@
+:root {
+    --my-gradient: linear-gradient(to top, rgb(42, 104, 211) 0%,rgb(8, 82, 210) , rgb(6, 6, 164) 100%) 1;
+}
+.card{
+    display: block;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 3px 15px 5px rgba(0, 0, 0, 0.2);
+    width: 35%;
+    margin: 15px;
+    padding: 15px;
+
+    /*border*/
+    border-image: var(--my-gradient) ;
+    border-width: 4px;
+    border-style: solid;
+}
+.card i{
+    font-size: 150px;
+    color: rgb(8, 82, 210);
+    padding: 15px;
+}
+.cards h2{
+    text-align: center;
+    color: rgb(8, 82, 210);
+    font-weight: bold;
+}
+.card h3{
+    text-align: center;
+    color: rgb(8, 82, 210);
+    font-weight: bold;
+}
+.card p{
+    font-weight: 300px;
+}
+.card :hover{
+    animation:card_size 0.5s ;
+    animation-fill-mode: forwards;
+}
+.card div:hover{
+    animation:card_size 0.5s ;
+    animation-fill-mode: forwards;    
+}
+.image:hover{
+    animation:card_size 0.5s ;
+    animation-fill-mode: forwards;
+}
+.image div:hover{
+    animation:card_size 0.5s ;
+    animation-fill-mode: forwards;    
+}
+
+
+
+
+/* Animations Key_frames*/
+@keyframes hover {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(10deg);}
+}
+@keyframes hover_size {
+    from {padding:13px;}
+    to {padding: 16px;}
+}
+@keyframes hover_color{
+    from{background-color: rgb(8, 82, 210);}
+    to {background-color: rgb(8, 66, 167);}
+}
+@keyframes icon_size{
+    from{font-size: 25px;}
+    to {font-size: 35px;}
+}
+@keyframes logo_size{
+    from{font-size: 35px;}
+    to {font-size: 39px;}
+}
+@keyframes card_size{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-10px);}
+    100%{transform: translateY(0px);}
+}

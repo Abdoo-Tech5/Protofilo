@@ -1,0 +1,102 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.title{
+    display: flex;
+    font-size: x-large;
+    margin-top: 40px;
+    justify-content: center;
+}
+.service_card{
+    padding: 10px;
+    min-width: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    flex-direction: row;
+    box-shadow: 12px 12px 20px 5px rgba(0, 0, 0, 0.537);
+    margin-bottom: 30px;
+}
+.card_title{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+}
+.service_contain{
+    display: flex;
+    flex-direction: row;
+}
+#game_dev_ser{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.service_image{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.service_info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    justify-self: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+.service_info p{
+    font-weight: 200;
+}
+.service_info button{
+    background-color: rgb(27, 101, 230);
+    font-size: large;
+    color: rgb(233, 233, 233);
+    border-radius: 15px;
+    padding: 10px;
+    border-style: none;
+    cursor: pointer;
+    margin-right: 25px;
+}
+.service_info button:hover,
+.service_info button:hover{
+    font-size: large;
+    color: rgb(233, 233, 233);
+    border-radius: 15px;
+    border-style: none;
+    cursor: pointer;
+    margin-right: 25px;
+    background-color: rgb(67, 131, 243);
+    animation: hover_size_button 0.5s , hover_color_button ;
+    animation-fill-mode: forwards;
+}
+
+hr{
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+
+/* Animations Key_frames*/
+@keyframes hover_size_button {
+    to {padding: 12px;}
+}
+@keyframes hover_color_button{
+    to {background-color: rgb(37, 100, 207);}
+}

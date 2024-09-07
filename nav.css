@@ -1,0 +1,67 @@
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.header_top{
+    background-color: rgb(224, 241, 251);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    top: 0%;
+    left: 0%;
+}
+.logo{
+    color: rgb(8, 82, 210);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 35px;
+}
+.logo:hover{
+    animation: logo_size 0.3s;
+    animation-fill-mode:forwards;
+}
+.Navigation a{
+    color: rgb(8, 82, 210);
+    font-size: medium;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.Navigation a:hover{
+    color: red;
+    font-size: medium;
+    font-weight: 500;
+    padding-left: 30px;
+    animation: icon_size 0.3s;
+    animation-fill-mode: forwards;
+}
+
+/*animations Key frame*/
+
+@keyframes hover {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(10deg);}
+}
+@keyframes hover_size {
+    from {padding:13px;}
+    to {padding: 16px;}
+}
+@keyframes hover_color{
+    from{background-color: rgb(8, 82, 210);}
+    to {background-color: rgb(8, 66, 167);}
+}
+@keyframes icon_size{
+    from{font-size: 25px;}
+    to {font-size: 35px;}
+}
+@keyframes logo_size{
+    from{font-size: 35px;}
+    to {font-size: 39px;}
+}
+@keyframes card_size{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-10px);}
+    100%{transform: translateY(0px);}
+}

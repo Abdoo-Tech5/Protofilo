@@ -1,0 +1,126 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.title{
+    font-size: xx-large;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    padding: 175px 100px;
+}
+.main{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: url(Laptop.jpg);
+    background-color: rgba(10, 3, 106, 0.485);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main h2{
+    color: rgb(71, 134, 243);
+    font-weight: bold;
+    font-size: 50px;
+}
+.main h3{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 30px;
+}
+.view_work{
+    background-color: rgb(8, 82, 210);
+    font-size: large;
+    color: white;
+    border-radius: 20px;
+    padding: 13px;
+    border-style: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.view_work:hover,.view_work:active{
+    font-size: large;
+    color: white;
+    border-radius: 20px;
+    padding: 13px;
+    border-style: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    animation: hover_size 0.6s, hover_color 0.6s;
+    animation-fill-mode: forwards;
+}
+.Social_icons i{
+    font-size: 25px;
+    color: white;
+    padding-top: 10px;
+    padding-right: 30px;
+}
+.Social_icons i:hover , .Social_icons i:active{
+    animation: hover 0.4s,icon_size 0.4s;
+    animation-fill-mode: forwards;
+}
+.Social_icons i:hover::after{
+    animation: hover 0.4s,icon_size 0.4s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+
+.Contant{
+    display: flex;
+    justify-content: space-between;
+}
+.footer{
+    bottom: 0;
+    left: 0;
+    background-color: grey;
+    color: white;
+    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .title{
+    font-size: medium;
+    color: white;
+}
+.footer .title span{
+    color: grey;
+}
+.footer a:hover{
+    color: rgb(8, 82, 210);
+}
+
+
+
+/* Animations Key_frames*/
+@keyframes hover {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(10deg);}
+}
+@keyframes hover_size {
+    from {padding:13px;}
+    to {padding: 16px;}
+}
+@keyframes hover_color{
+    from{background-color: rgb(8, 82, 210);}
+    to {background-color: rgb(8, 66, 167);}
+}
+@keyframes icon_size{
+    from{font-size: 25px;}
+    to {font-size: 35px;}
+}
+@keyframes logo_size{
+    from{font-size: 35px;}
+    to {font-size: 39px;}
+}
+@keyframes card_size{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-10px);}
+    100%{transform: translateY(0px);}
+}
+

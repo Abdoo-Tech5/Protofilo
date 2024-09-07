@@ -1,0 +1,104 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.title{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    background: linear-gradient(#0098fd,#de8041,#02569e);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Projects{
+    background-color: aliceblue;
+}
+.Projects_content{
+    margin-top: 30px;
+}
+.Projects_card{
+    background-color: aquamarine;
+    border: 1px solid rgb(8, 82, 210);
+    border-radius: 10px;
+    margin: 20px;
+}
+.Projects_card:hover{
+    transform: scale(1.1);
+}
+.content img{
+    width: 70%;
+    height: 5%;
+    margin-bottom: 25px;
+}
+#project_info_web{
+    padding: 13px;
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.415);
+    justify-content: center;
+    align-items: center;
+    color:  white;
+}
+.project_category{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+}
+.project_title{
+    display: flex;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+#project_card_web{
+    background-image: linear-gradient(to top,#002b4b,#005299,#0098fd);
+    margin-left: 0;
+    margin-bottom: 25px;
+    margin-right: 5px;
+}
+#project_card_game{
+    background-image: linear-gradient(to top,#7c335e,#de8041,#f89653);
+    margin-left: 0;
+    margin-bottom: 25px;
+    margin-right: 5px;
+}
+#project_card_app{
+    background-image: linear-gradient(to top,#02569e,#55c4f9,white);
+    margin-left: 0;
+    margin-bottom: 25px;
+    margin-right: 5px;
+}
+#project_info_game{
+    padding: 13px;
+    position: absolute;
+    left: 35%;
+    top: 165%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.507);
+    justify-content: center;
+    align-items: center;
+    color:  white;
+}
+#project_info_app{
+    padding: 13px;
+    position: absolute;
+    left: 35%;
+    top: 245%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.642);
+    justify-content: center;
+    align-items: center;
+    color:  white;
+}
+.more_details{
+    color:rgb(127, 166, 233)
+}
+.more_details:hover{
+    color: red;
+}
